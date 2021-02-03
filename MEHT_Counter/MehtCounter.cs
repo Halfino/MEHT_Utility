@@ -29,14 +29,14 @@ namespace MEHT_Counter
             mehtNoThrPapi = Math.Round(mehtNoThrPapi, 1);
 
             double mehtTotal = mehtNoThrPapi + (papiAltitude - thrAltitude);
-            mehtTotal = Math.Round(mehtTotal, 1);
+            mehtTotal = Math.Round(mehtTotal, 2);
 
             return mehtTotal;
         }
 
         public double ConvertMehtIntoFeet() {
             double mehtTotalFeet = CountMehtInMeter() / 0.3048;
-            mehtTotalFeet = Math.Round(mehtTotalFeet, 1);
+            mehtTotalFeet = Math.Round(mehtTotalFeet, 2);
 
             return mehtTotalFeet;
         }
